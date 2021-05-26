@@ -1,0 +1,102 @@
+.card {
+  width: 17vw;
+  color: black;
+  border: solid 1px;
+  border-color: #426f94;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: white;
+  margin-bottom: 5px;
+  text-align: left;
+  padding:2px;
+  height:auto;
+  margin-inline:auto;
+  word-break: break-word;
+
+}
+.d-flex{
+    display:none;
+}
+
+img{
+    cursor: pointer;
+}
+
+.backlog{
+    display: none;
+    height: 4vh;
+    justify-content: flex-end;
+}
+
+
+.production{
+    height: 4vh;
+    justify-content: flex-start;
+}
+
+input {
+    border-radius: 4px;
+    border: solid 1px;
+    width: 12vw;
+}
+
+.imgUnblock{
+    display:none;
+    width:1.6vw;
+}
+
+.unBlock{
+    display:none;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+.flex{
+    margin-bottom:3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrow-prod{
+    display: none;
+    height: 4vh;
+    justify-content: space-evenly;
+}
+
+.arrow{
+    display: none;
+    height: 4vh;
+    justify-content: space-evenly;
+}
+
+.card > p{
+    display: none;
+}
+
+.card:hover{
+    height:auto;    
+}
+.card:hover p {
+    display:block;
+}
+.card:hover .arrow {
+    display:flex;
+}
+.card:hover .backlog{
+    display:flex;
+}
+.card:hover .d-flex{
+    display:flex;
+}
+.card:hover .imgUnblock{
+    display:flex;
+}
+.card:hover .unBlock{
+    display:flex;
+}
+
+
+.d-none{
+    display:none;
+}

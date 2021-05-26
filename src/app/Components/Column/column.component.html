@@ -1,0 +1,35 @@
+<div class="main">
+    
+    <div class="column"  >
+        <span class="add">
+            BackLog
+            <a href="#abrirModal"><img src="../../../assets/add.svg" class="icon-plus" alt="Add task"></a>
+           <button class="ST" (click)="noTasks()">S/T</button>
+        </span>    
+        
+    <app-card [BackLog]="getCardsBacklog()" id="backlog"></app-card>
+    </div>
+
+    <div class="column" >
+        <span class="pb">Desenvolvendo</span>
+        <app-card [onDevelopment]="getCardsOnDevelopment()" id="onDevelopment"></app-card>
+    </div>
+
+    <div class="column" >
+        <span class="pb">Testes</span>
+        <app-card [test]="getCardsTest()" id="test"></app-card>
+    </div>
+
+    <div class="column" >
+        <span class="pb">Interrompido</span>
+        <app-card [interrupted]="getCardsInterrupted()" id="interrupted"></app-card>
+    </div>
+
+    <div class="column" >
+        <span class="pb">Produção/concluido</span>
+        <app-card [production]="getCardsProduction()" id="production"></app-card>
+    </div>
+
+    <app-modal (onSubmit)="ngOnInit()" ></app-modal>
+
+</div>

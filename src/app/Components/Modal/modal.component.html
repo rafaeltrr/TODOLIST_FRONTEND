@@ -1,0 +1,21 @@
+<div id="abrirModal" class="modal">
+    <a href="#fechar" title="Fechar" class="fechar">x</a>
+    <h1>Gerar nova tarefa</h1>
+    <form (ngSubmit)="register()" >
+        <div>
+            <div id="suggest" >
+                <span>Você quis dizer? </span>
+                <span id="spanSuggest">{{suggest}}</span>
+            </div>
+            <span id="resultMessage">{{msg}}</span>
+            <input type="text" placeholder="Nome" id="name" name="name" [(ngModel)]="name">
+            <input type="email" placeholder="Email" id="email" name="email" [(ngModel)]="email" />
+            <textarea class="area" type="text" id="description" placeholder="Descrição" maxlength="150" name="description"
+                [(ngModel)]="description">
+            </textarea>          
+            <input type="submit" placeholder="Enviar" class="submit" />
+        </div>
+
+    </form>
+
+</div>

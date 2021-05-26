@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 15vw;
+  max-height: 15vw;
+}

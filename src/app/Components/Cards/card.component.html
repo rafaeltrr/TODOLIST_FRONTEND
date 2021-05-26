@@ -1,0 +1,28 @@
+<div *ngFor="let card of Cards  | async ;let i = index " id="card-{{card.id}}">
+    <div class="card" >
+
+    <span>Criado em: {{card.createdAt }}</span>
+    <br>
+    <span>{{card.description }}</span>
+    <p>{{card.name}}</p>
+    <p>{{card.email}}</p>
+    <div class="backlog" *ngIf="card.status == 'backlog' || card.status == 'onDevelopment'">
+        <img class="backlog" (click)="updateCard('right', card,false)" src="../../../assets/arrow-right.svg"
+            alt="right">
+    </div>
+    <div class="arrow" *ngIf="card.status != 'backlog' && card.status != 'onDevelopment' && card.status != 'production' ">
+        <img class="arrow" (click)="updateCard('left',card,false)" src="../../../assets/arrow-left.svg" alt="left">
+        <img class="arrow" (click)="updateCard('right',card,false)" src="../../../assets/arrow-right.svg" alt="right">
+    </div>
+    <div class="production" style="height: auto;" *ngIf="card.status == 'production'">
+        <span id="invalid" style="display: none; color:red">senha incorreta</span>
+        <span id="exceeded" style="display: none; color:red">Limite excedido</span>
+
+        <div class="flex">
+            <input class="d-flex" id="password"  type="password" placeholder="informe a senha" [(ngModel)]="password"/>
+            <button type="submit" id="button" (click)="updateCard('left',card,true)" class="unBlock"><img class="imgUnblock" src="../../../assets/desbloquear.png" alt=""></button>
+            
+        </div>
+    </div>
+    </div>
+</div>

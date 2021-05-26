@@ -1,0 +1,10 @@
+Primeiramente obrigado pela oportunidade de participar em um teste com vocês.
+Queria ter entregue antes, porém por conta do trabalho não consegui,
+foi um grande desafio utilizar o angular, e tinha bem pouco conhecimento, basicamente tudo
+que fiz foi pesquisando na documentação ou tentando fazer algo que fizesse sentido,
+confesso que teve muitas coisas que fiz utilizando angular que acredito que não seja a forma correta
+mas foi a que eu consegui. Contudo, acredito que tive grande evolução e o final ficou bem satisfatorio.
+Muito obrigado até mais
+
+Observação: api de validação de email tem quantidade limitado, caso nao consiga gerar novas tasks
+por favor atualize a chave na SRC/APP/COMPONENTS/MODAL/SCRIPTS/REGISTER LINHA 15
